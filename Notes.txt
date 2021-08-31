@@ -1,0 +1,51 @@
+-- Maybe also grab this when getting all commands and filtering for apm.  This commnand shows 
+show /sys service all:
+aced         run (pid 12900) 14 days, 1 start
+apm_websso   run (pid 14080) 14 days, 1 start
+apmd         run (pid 12902) 14 days, 1 start
+eam          run (pid 12909) 14 days, 1 start
+eca          run (pid 12911) 14 days, 1 start
+httpd_apm    run (pid 12918) 14 days, 1 start
+logstatd     run (pid 12929) 14 days, 1 start
+mysql        run (pid 12947) 14 days, 1 start
+oauth        run (pid 12993) 14 days, 1 start
+ping_access_agent run (pid 13034) 14 days, 1 start
+restjavad    run (pid 13080) 14 days, 1 start
+restnoded    run (pid 5759) 14 days
+rewrite      run (pid 13114) 14 days, 1 start
+samlidpd     run (pid 13135) 14 days, 1 start
+urldb        down, Not provisioned
+urldbmgrd    down, Not provisioned
+vdi          run (pid 15115) 14 days, 1 start
+websso       run (pid 13275) 14 days, 1 start
+
+-- This shows the current epsec status
+list /sys software update-status
+
+-- Probably good to to check if there's any cores
+ls -alsR (critical files)
+/var/core:
+total 8
+     4 drwxrwxrwt  2 root        root                   4096 Jul 20 01:00 2021 .
+     4 drwxr-xr-x 36 root        root                   4096 Mar 15 07:20 2021 ..
+
+-- How much memory the services are using
+bigstart memstat
+aced                            none          388444
+apm_websso                      none            5528
+apmd                            none         2531392
+eam                             none          164568
+eca                             none          847396
+httpd_apm                       none           12700
+logstatd                        none          131400
+mysql                           none           59560
+oauth                           none          587472
+ping_access_agent               none          504712
+restjavad                       none         2921516
+restnoded                       none         1250108
+rewrite                         none            5528
+samlidpd                        none          163976
+urldb                           none               0
+urldbmgrd                       none               0
+vdi                             none          584364
+websso                          none            5528

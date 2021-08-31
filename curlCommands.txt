@@ -1,0 +1,81 @@
+https://clouddocs.f5.com/api/ihealth/General_Usage.html
+
+ARTICLES
+https://devcentral.f5.com/s/articles/ihealth-now-has-an-api
+
+-- Series
+Part 1 == https://devcentral.f5.com/s/articles/an-introduction-to-ihealth
+Part 2 == https://devcentral.f5.com/s/articles/ihealth-api-part-2-an-introduction-to-rest
+Part 3 == https://devcentral.f5.com/s/articles/ihealth-api-part-3-a-little-code
+Part 4 == https://devcentral.f5.com/s/articles/ihealth-api-part-4-a-little-more-code
+
+-- Get auth related cookies (ssosession) (POST)
+curl -X POST https://api.f5.com/auth/pub/sso/login/ihealth-api \
+--cookie-jar cookiefile -o - \
+--data '{"user_id":"d.jackson@f5.com", "user_secret":"DelJeiGabAng4!"}' \
+-H "Content-type: application/json" \
+--user-agent "f5.com apm testing"
+
+-- Get list of IDs (currently 16642310 (sessions in apm.2) and 16648226 (sessions in apm) )you uploaded (GET)
+curl -H "Accept: application/vnd.f5.ihealth.api" \
+--user-agent "f5.com apm testing" \
+--cookie cookiefile \
+--cookie-jar cookiefile -o - \
+https://ihealth-api.f5.com/qkview-analyzer/api/qkviews
+
+-- Get Metadata such as: (GET)
+* support entitlement data
+* credentials used to upload the QKView
+* upload timestamp
+* chassis serial number
+* GUI visibility
+* sharing status
+* F5 support case
+* non F5 case
+curl -H "Accept: application/vnd.f5.ihealth.api" \
+--user-agent "f5.com apm testing" \
+--cookie cookiefile \
+--cookie-jar cookiefile -o - \
+https://ihealth-api.f5.com/qkview-analyzer/api/qkviews/16642310
+
+-- Get ALL diagnostic info (if 202 recieved then wait about 10 seconds before requesting again) (GET)
+curl -H "Accept: application/vnd.f5.ihealth.api" \
+--user-agent "f5.com apm testing" \
+--cookie cookiefile \
+--cookie-jar cookiefile -o - \
+https://ihealth-api.f5.com/qkview-analyzer/api/qkviews/16642310/diagnostics
+
+-- Get Hits only for diagnostic data (GET)
+curl -H "Accept: application/vnd.f5.ihealth.api" \
+--user-agent "f5.com apm testing" \
+--cookie cookiefile \
+--cookie-jar cookiefile -o - \
+https://ihealth-api.f5.com/qkview-analyzer/api/qkviews/16642310/diagnostics?set=hit
+
+-- Get ALL commands available (GET)
+curl -H "Accept: application/vnd.f5.ihealth.api" \
+--user-agent "f5.com apm testing" \
+--cookie cookiefile \
+--cookie-jar cookiefile -o - \
+https://ihealth-api.f5.com/qkview-analyzer/api/qkviews/16642310/commands
+
+-- Get the base64 contents of a command result - in this case all apm profiles (GET)
+curl -H "Accept: application/vnd.f5.ihealth.api" \
+--user-agent "f5.com apm testing" \
+--cookie cookiefile \
+--cookie-jar cookiefile -o - \
+https://ihealth-api.f5.com/qkview-analyzer/api/qkviews/16642310/commands/44a2277cf93954c719a4ae5e9ebf5261f3ab38d5
+
+-- Get a list of all files (GET)
+curl -H "Accept: application/vnd.f5.ihealth.api" \
+--user-agent "f5.com apm testing" \
+--cookie cookiefile \
+--cookie-jar cookiefile -o - \
+https://ihealth-api.f5.com/qkview-analyzer/api/qkviews/16642310/files
+
+-- Get the contents of an individual file - need to set header to octet-stream (GET)
+curl -H "Accept: application/octet-stream" \
+--user-agent "f5.com apm testing" \
+--cookie cookiefile \
+--cookie-jar cookiefile -o - \
+https://ihealth-api.f5.com/qkview-analyzer/api/qkviews/16642310/files/dmFyL2xvZy9hcG0uMl90cmFuc2Zvcm1lZA

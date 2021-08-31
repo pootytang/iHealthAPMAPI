@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Qkproc version="1.6">
+ <configdump/>
+ <file_info/>
+ <cmd_output module_name="apm_module">
+  <command cmdline="/usr/bin/tmsh -a show apm profile access all">
+   <piece num="0">
+    <value>
+--------------------------------------------------------------
+ACCESS Profile: API_all                                       
+--------------------------------------------------------------
+    User Session Statistics:                                  
+--------------------------------------------------------------
+    total sessions: 0                                         
+    total established sessions: 0                             
+    current active sessions: 0                                
+    current pending sessions: 0                               
+    current established sessions: 0                           
+    sessions terminated due to user logged out: 0             
+    sessions terminated due to admin termination: 0           
+    sessions terminated due to timeout in evaluation state: 0 
+    sessions terminated due to timeout in established state: 0
+    sessions terminated due to errors: 0                      
+    sessions that resulted in an allow ending: 0              
+    sessions resulted into deny ending: 0                     
+    sessions resulted into redirect ending: 0                 
+    sessions resulted into redirect ending with session: 0    
+    requests allowed by ACL: 0                                
+    requests denied by ACL: 0                                 
+--------------------------------------------------------------
+    Apply Access Policy: Not-Required                         
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+ACCESS Profile: API_rs                                        
+--------------------------------------------------------------
+    User Session Statistics:                                  
+--------------------------------------------------------------
+    total sessions: 0                                         
+    total established sessions: 0                             
+    current active sessions: 0                                
+    current pending sessions: 0                               
+    current established sessions: 0                           
+    sessions terminated due to user logged out: 0             
+    sessions terminated due to admin termination: 0           
+    sessions terminated due to timeout in evaluation state: 0 
+    sessions terminated due to timeout in established state: 0
+    sessions terminated due to errors: 0                      
+    sessions that resulted in an allow ending: 0              
+    sessions resulted into deny ending: 0                     
+    sessions resulted into redirect ending: 0                 
+    sessions resulted into redirect ending with session: 0    
+    requests allowed by ACL: 0                                
+    requests denied by ACL: 0                                 
+--------------------------------------------------------------
+    Apply Access Policy: Not-Required                         
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+ACCESS Profile: AP_na                                         
+--------------------------------------------------------------
+    User Session Statistics:                                  
+--------------------------------------------------------------
+    total sessions: 0                                         
+    total established sessions: 0                             
+    current active sessions: 0                                
+    current pending sessions: 0                               
+    current established sessions: 0                           
+    sessions terminated due to user logged out: 0             
+    sessions terminated due to admin termination: 0           
+    sessions terminated due to timeout in evaluation state: 0 
+    sessions terminated due to timeout in established state: 0
+    sessions terminated due to errors: 0                      
+    sessions that resulted in an allow ending: 0              
+    sessions resulted into deny ending: 0                     
+    sessions resulted into redirect ending: 0                 
+    sessions resulted into redirect ending with session: 0    
+    requests allowed by ACL: 0                                
+    requests denied by ACL: 0                                 
+--------------------------------------------------------------
+    Apply Access Policy: Not-Required                         
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+ACCESS Profile: InlineSAML_ap                                 
+--------------------------------------------------------------
+    User Session Statistics:                                  
+--------------------------------------------------------------
+    total sessions: 45                                        
+    total established sessions: 1                             
+    current active sessions: 0                                
+    current pending sessions: 0                               
+    current established sessions: 0                           
+    sessions terminated due to user logged out: 0             
+    sessions terminated due to admin termination: 0           
+    sessions terminated due to timeout in evaluation state: 44
+    sessions terminated due to timeout in established state: 1
+    sessions terminated due to errors: 0                      
+    sessions that resulted in an allow ending: 1              
+    sessions resulted into deny ending: 0                     
+    sessions resulted into redirect ending: 0                 
+    sessions resulted into redirect ending with session: 0    
+    requests allowed by ACL: 10                               
+    requests denied by ACL: 0                                 
+--------------------------------------------------------------
+    Apply Access Policy: Not-Required                         
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+ACCESS Profile: JacksonAS_ap                                  
+--------------------------------------------------------------
+    User Session Statistics:                                  
+--------------------------------------------------------------
+    total sessions: 0                                         
+    total established sessions: 0                             
+    current active sessions: 0                                
+    current pending sessions: 0                               
+    current established sessions: 0                           
+    sessions terminated due to user logged out: 0             
+    sessions terminated due to admin termination: 0           
+    sessions terminated due to timeout in evaluation state: 0 
+    sessions terminated due to timeout in established state: 0
+    sessions terminated due to errors: 0                      
+    sessions that resulted in an allow ending: 0              
+    sessions resulted into deny ending: 0                     
+    sessions resulted into redirect ending: 0                 
+    sessions resulted into redirect ending with session: 0    
+    requests allowed by ACL: 0                                
+    requests denied by ACL: 0                                 
+--------------------------------------------------------------
+    Apply Access Policy: Not-Required                         
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+ACCESS Profile: MacroTest                                     
+--------------------------------------------------------------
+    User Session Statistics:                                  
+--------------------------------------------------------------
+    total sessions: 0                                         
+    total established sessions: 0                             
+    current active sessions: 0                                
+    current pending sessions: 0                               
+    current established sessions: 0                       </value>
+   </piece>
+   <piece num="1">
+    <value>    
+    sessions terminated due to user logged out: 0             
+    sessions terminated due to admin termination: 0           
+    sessions terminated due to timeout in evaluation state: 0 
+    sessions terminated due to timeout in established state: 0
+    sessions terminated due to errors: 0                      
+    sessions that resulted in an allow ending: 0              
+    sessions resulted into deny ending: 0                     
+    sessions resulted into redirect ending: 0                 
+    sessions resulted into redirect ending with session: 0    
+    requests allowed by ACL: 0                                
+    requests denied by ACL: 0                                 
+--------------------------------------------------------------
+    Apply Access Policy: Not-Required                         
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+ACCESS Profile: MainIdP_ap                                    
+--------------------------------------------------------------
+    User Session Statistics:                                  
+--------------------------------------------------------------
+    total sessions: 44                                        
+    total established sessions: 0                             
+    current active sessions: 0                                
+    current pending sessions: 0                               
+    current established sessions: 0                           
+    sessions terminated due to user logged out: 0             
+    sessions terminated due to admin termination: 0           
+    sessions terminated due to timeout in evaluation state: 44
+    sessions terminated due to timeout in established state: 0
+    sessions terminated due to errors: 0                      
+    sessions that resulted in an allow ending: 0              
+    sessions resulted into deny ending: 0                     
+    sessions resulted into redirect ending: 0                 
+    sessions resulted into redirect ending with session: 0    
+    requests allowed by ACL: 2                                
+    requests denied by ACL: 0                                 
+--------------------------------------------------------------
+    Apply Access Policy: Not-Required                         
+--------------------------------------------------------------
+
+---------------------------------------------------------------
+ACCESS Profile: OAuthClientAndResource_ap                      
+---------------------------------------------------------------
+    User Session Statistics:                                   
+---------------------------------------------------------------
+    total sessions: 85                                         
+    total established sessions: 25                             
+    current active sessions: 0                                 
+    current pending sessions: 0                                
+    current established sessions: 0                            
+    sessions terminated due to user logged out: 0              
+    sessions terminated due to admin termination: 4            
+    sessions terminated due to timeout in evaluation state: 60 
+    sessions terminated due to timeout in established state: 19
+    sessions terminated due to errors: 2                       
+    sessions that resulted in an allow ending: 25              
+    sessions resulted into deny ending: 0                      
+    sessions resulted into redirect ending: 0                  
+    sessions resulted into redirect ending with session: 0     
+    requests allowed by ACL: 0                                 
+    requests denied by ACL: 0                                  
+---------------------------------------------------------------
+    Apply Access Policy: Not-Required                          
+---------------------------------------------------------------
+
+--------------------------------------------------------------
+ACCESS Profile: access                                        
+--------------------------------------------------------------
+    User Session Statistics:                                  
+--------------------------------------------------------------
+    total sessions: 0                                         
+    total established sessions: 0                             
+    current active sessions: 0                                
+    current pending sessions: 0                               
+    current established sessions: 0                           
+    sessions terminated due to user logged out: 0             
+    sessions terminated due to admin termination: 0           
+    sessions terminated due to timeout in evaluation state: 0 
+    sessions terminated due to timeout in established state: 0
+    sessions terminated due to errors: 0                      
+    sessions that resulted in an allow ending: 0              
+    sessions resulted into deny ending: 0                     
+    sessions resulted into redirect ending: 0                 
+    sessions resulted into redirect ending with session: 0    
+    requests allowed by ACL: 0                                
+    requests denied by ACL: 0                                 
+--------------------------------------------------------------
+    Apply Access Policy: Not-Required                         
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+ACCESS Profile: ap_AS                                         
+--------------------------------------------------------------
+    User Session Statistics:                                  
+--------------------------------------------------------------
+    total sessions: 44                                        
+    total established sessions: 0                             
+    current active sessions: 0                                
+    current pending sessions: 0                               
+    current established sessions: 0                           
+    sessions terminated due to user logged out: 0             
+    sessions terminated due to admin termination: 0           
+    sessions terminated due to timeout in evaluation state: 44
+    sessions terminated due to timeout in established state: 0
+    sessions terminated due to errors: 0                      
+    sessions that resulted in an allow ending: 0              
+    sessions resulted into deny ending: 0                     
+    sessions resulted into redirect ending: 0                 
+    sessions resulted into redirect ending with session: 0    
+    requests allowed by ACL: 0                                
+    requests denied by ACL: 0                                 
+--------------------------------------------------------------
+    Apply Access Policy: Not-Required                         
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+ACCESS Profile: ap_IdPBase                                    
+--------------------------------------------------------------
+    User Session Statistics:                                  
+--------------------------------------------------------------
+    total sessions: 0                                         
+    total established sessions: 0                             
+    current active sessions: 0                                
+    current pending sessions: 0                               
+    current established sessions: 0                           
+    sessions terminated due to user logged out: 0             
+    sessions terminated due to admin termination: 0           
+    sessions terminated due to timeout in evaluation state: 0 
+    sessions terminated due to timeout in established state: 0
+    sessions terminated due to errors: 0                      
+    sessions that resulted in an allow ending: 0              
+    sessions resulted into deny ending: 0                     
+    sessions resulted into redirect ending: 0                 
+    sessions resulted into redirect ending with session: 0    
+    requests allowed by ACL: 0</value>
+   </piece>
+   <piece num="2">
+    <value>                                
+    requests denied by ACL: 0                                 
+--------------------------------------------------------------
+    Apply Access Policy: Not-Required                         
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+ACCESS Profile: ap_RDPCA                                      
+--------------------------------------------------------------
+    User Session Statistics:                                  
+--------------------------------------------------------------
+    total sessions: 44                                        
+    total established sessions: 0                             
+    current active sessions: 0                                
+    current pending sessions: 0                               
+    current established sessions: 0                           
+    sessions terminated due to user logged out: 0             
+    sessions terminated due to admin termination: 0           
+    sessions terminated due to timeout in evaluation state: 44
+    sessions terminated due to timeout in established state: 0
+    sessions terminated due to errors: 0                      
+    sessions that resulted in an allow ending: 0              
+    sessions resulted into deny ending: 0                     
+    sessions resulted into redirect ending: 0                 
+    sessions resulted into redirect ending with session: 0    
+    requests allowed by ACL: 0                                
+    requests denied by ACL: 0                                 
+--------------------------------------------------------------
+    Apply Access Policy: Not-Required                         
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+ACCESS Profile: ap_SP                                         
+--------------------------------------------------------------
+    User Session Statistics:                                  
+--------------------------------------------------------------
+    total sessions: 0                                         
+    total established sessions: 0                             
+    current active sessions: 0                                
+    current pending sessions: 0                               
+    current established sessions: 0                           
+    sessions terminated due to user logged out: 0             
+    sessions terminated due to admin termination: 0           
+    sessions terminated due to timeout in evaluation state: 0 
+    sessions terminated due to timeout in established state: 0
+    sessions terminated due to errors: 0                      
+    sessions that resulted in an allow ending: 0              
+    sessions resulted into deny ending: 0                     
+    sessions resulted into redirect ending: 0                 
+    sessions resulted into redirect ending with session: 0    
+    requests allowed by ACL: 0                                
+    requests denied by ACL: 0                                 
+--------------------------------------------------------------
+    Apply Access Policy: Not-Required                         
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+ACCESS Profile: oauthbearersso_ap                             
+--------------------------------------------------------------
+    User Session Statistics:                                  
+--------------------------------------------------------------
+    total sessions: 42                                        
+    total established sessions: 0                             
+    current active sessions: 0                                
+    current pending sessions: 0                               
+    current established sessions: 0                           
+    sessions terminated due to user logged out: 0             
+    sessions terminated due to admin termination: 0           
+    sessions terminated due to timeout in evaluation state: 42
+    sessions terminated due to timeout in established state: 0
+    sessions terminated due to errors: 0                      
+    sessions that resulted in an allow ending: 0              
+    sessions resulted into deny ending: 0                     
+    sessions resulted into redirect ending: 0                 
+    sessions resulted into redirect ending with session: 0    
+    requests allowed by ACL: 0                                
+    requests denied by ACL: 0                                 
+--------------------------------------------------------------
+    Apply Access Policy: Not-Required                         
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+ACCESS Profile: rdgRapper                                     
+--------------------------------------------------------------
+    User Session Statistics:                                  
+--------------------------------------------------------------
+    total sessions: 0                                         
+    total established sessions: 0                             
+    current active sessions: 0                                
+    current pending sessions: 0                               
+    current established sessions: 0                           
+    sessions terminated due to user logged out: 0             
+    sessions terminated due to admin termination: 0           
+    sessions terminated due to timeout in evaluation state: 0 
+    sessions terminated due to timeout in established state: 0
+    sessions terminated due to errors: 0                      
+    sessions that resulted in an allow ending: 0              
+    sessions resulted into deny ending: 0                     
+    sessions resulted into redirect ending: 0                 
+    sessions resulted into redirect ending with session: 0    
+    requests allowed by ACL: 0                                
+    requests denied by ACL: 0                                 
+--------------------------------------------------------------
+    Apply Access Policy: Not-Required                         
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+ACCESS Profile: seahawksAPI2_apiprotection_ap                 
+--------------------------------------------------------------
+    User Session Statistics:                                  
+--------------------------------------------------------------
+    total sessions: 0                                         
+    total established sessions: 0                             
+    current active sessions: 0                                
+    current pending sessions: 0                               
+    current established sessions: 0                           
+    sessions terminated due to user logged out: 0             
+    sessions terminated due to admin termination: 0           
+    sessions terminated due to timeout in evaluation state: 0 
+    sessions terminated due to timeout in established state: 0
+    sessions terminated due to errors: 0                      
+    sessions that resulted in an allow ending: 0              
+    sessions resulted into deny ending: 0                     
+    sessions resulted into redirect ending: 0                 
+    sessions resulted into redirect ending with session: 0    
+    requests allowed by ACL: 0                                
+    requests denied by ACL: 0                                 
+--------------------------------------------------------------
+    Apply Access Policy: Not-Required                         
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+ACCESS Profile: seahawks_api_ap                               
+--------------------------------------------------------------
+    User Session Statistics:                                  
+--------------------------------------------------------------
+    total sessions: 0    </value>
+   </piece>
+   <piece num="3">
+    <value>                                     
+    total established sessions: 0                             
+    current active sessions: 0                                
+    current pending sessions: 0                               
+    current established sessions: 0                           
+    sessions terminated due to user logged out: 0             
+    sessions terminated due to admin termination: 0           
+    sessions terminated due to timeout in evaluation state: 0 
+    sessions terminated due to timeout in established state: 0
+    sessions terminated due to errors: 0                      
+    sessions that resulted in an allow ending: 0              
+    sessions resulted into deny ending: 0                     
+    sessions resulted into redirect ending: 0                 
+    sessions resulted into redirect ending with session: 0    
+    requests allowed by ACL: 0                                
+    requests denied by ACL: 0                                 
+--------------------------------------------------------------
+    Apply Access Policy: Not-Required                         
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+ACCESS Profile: shivani_idp                                   
+--------------------------------------------------------------
+    User Session Statistics:                                  
+--------------------------------------------------------------
+    total sessions: 0                                         
+    total established sessions: 0                             
+    current active sessions: 0                                
+    current pending sessions: 0                               
+    current established sessions: 0                           
+    sessions terminated due to user logged out: 0             
+    sessions terminated due to admin termination: 0           
+    sessions terminated due to timeout in evaluation state: 0 
+    sessions terminated due to timeout in established state: 0
+    sessions terminated due to errors: 0                      
+    sessions that resulted in an allow ending: 0              
+    sessions resulted into deny ending: 0                     
+    sessions resulted into redirect ending: 0                 
+    sessions resulted into redirect ending with session: 0    
+    requests allowed by ACL: 0                                
+    requests denied by ACL: 0                                 
+--------------------------------------------------------------
+    Apply Access Policy: Not-Required                         
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+ACCESS Profile: shivani_sp                                    
+--------------------------------------------------------------
+    User Session Statistics:                                  
+--------------------------------------------------------------
+    total sessions: 0                                         
+    total established sessions: 0                             
+    current active sessions: 0                                
+    current pending sessions: 0                               
+    current established sessions: 0                           
+    sessions terminated due to user logged out: 0             
+    sessions terminated due to admin termination: 0           
+    sessions terminated due to timeout in evaluation state: 0 
+    sessions terminated due to timeout in established state: 0
+    sessions terminated due to errors: 0                      
+    sessions that resulted in an allow ending: 0              
+    sessions resulted into deny ending: 0                     
+    sessions resulted into redirect ending: 0                 
+    sessions resulted into redirect ending with session: 0    
+    requests allowed by ACL: 0                                
+    requests denied by ACL: 0                                 
+--------------------------------------------------------------
+    Apply Access Policy: Not-Required                         
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+ACCESS Profile: shivani_test                                  
+--------------------------------------------------------------
+    User Session Statistics:                                  
+--------------------------------------------------------------
+    total sessions: 0                                         
+    total established sessions: 0                             
+    current active sessions: 0                                
+    current pending sessions: 0                               
+    current established sessions: 0                           
+    sessions terminated due to user logged out: 0             
+    sessions terminated due to admin termination: 0           
+    sessions terminated due to timeout in evaluation state: 0 
+    sessions terminated due to timeout in established state: 0
+    sessions terminated due to errors: 0                      
+    sessions that resulted in an allow ending: 0              
+    sessions resulted into deny ending: 0                     
+    sessions resulted into redirect ending: 0                 
+    sessions resulted into redirect ending with session: 0    
+    requests allowed by ACL: 0                                
+    requests denied by ACL: 0                                 
+--------------------------------------------------------------
+    Apply Access Policy: Not-Required                         
+--------------------------------------------------------------
+
+</value>
+   </piece>
+   <pieces>4</pieces>
+   <retcode>0</retcode>
+  </command>
+  <command cmdline="/bin/find /config/filestore/files_d/*/kerberos_keytab_file_d/* -maxdepth 1 -type f -exec /usr/bin/klist -ekt {} \;">
+   <pieces>0</pieces>
+   <retcode>256</retcode>
+  </command>
+ </cmd_output>
+</Qkproc>
