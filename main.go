@@ -23,14 +23,18 @@ func main() {
 	router := gin.New()
 	router.Use(ihealthApiMidware(c))
 
+	// NOTE:  addomg the equivalent / routes avoids gin responding with a 307
 	// THE BASE ROUTES
+	router.GET("/", apm.AllEndpoints)
+	router.POST("/", apm.AllEndpoints)
 	router.POST("/auth", apmapi.Auth)
+	router.POST("/auth/", apmapi.Auth)
 	router.GET("/metadata", apmapi.Oops)
 	router.GET("/metadata/:id", apmapi.Metadata)
 	router.GET("/endpoints", apm.AllEndpoints)
 	router.GET("/endpoints/", apm.AllEndpoints)
 
-	// APM ROUTES - addomg the equivalent / routes avoids gin responding with a 307
+	// APM ROUTES
 	apmCommandsGroup := router.Group("/apm/commands")
 	{
 		apmCommandsGroup.GET("", apm.CommandsEndpoints)

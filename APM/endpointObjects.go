@@ -1,18 +1,28 @@
 package apm
 
-type AllEPs struct {
-	Endpoints []struct {
-		FilesEndpoints    FilesEndpointList    `json:"files_endpoints,omitempty"`
-		CommandsEndpoints CommandsEndpointList `json:"commands_endpoints,omitempty"`
-	} `json:"endpoints"`
+// This code works but doesn't look how I want it to
+// type AllEndPoints []struct {
+// 	Endpoints Endpoints `json:"endpoints"`
+// }
+// This was at the end of endpointMethods.go
+// all := AllEndPoints{
+// 	{Endpoints: ep},
+// }
+
+type AllEndPoints struct {
+	Endpoints []Endpoints
 }
 
-type FilesEndpointList []struct {
-	Endpoint FilesEndPoint
-}
+//all := AllEndPoints{Endpoints: ep}
 
-type CommandsEndpointList []struct {
-	Endpoint CommandsEndpoint
+type Endpoints struct {
+	Files    FilesEndPoint
+	File     FileEndPoint
+	Commands CommandsEndpoint
+	Command  CommandEndpoint
+	Auth     AuthEndPoint
+	Metadata MetadataEndPoint
+	Base     BaseEndPoint
 }
 
 /******** APM ********/
@@ -55,11 +65,6 @@ type MetadataEndPoint struct {
 	Eps []EPData `json:"metadata_endpoints"`
 }
 
-// Endpoint
-type EndPoint struct {
-	Eps []EPData `json:"endpoint"`
-}
-
 // Base
 type BaseEndPoint struct {
 	Eps []EPData `json:"base_endpoint"`
@@ -71,7 +76,7 @@ type BaseEndPoint struct {
 type EPData struct {
 	Method      string `json:"method"`
 	Params      string `json:"params"`
-	Path        string `json:"path,omitempty"`
+	Path        string `json:"path"`
 	FullPath    string `json:"full_path"`
 	Description string `json:"description"`
 }
